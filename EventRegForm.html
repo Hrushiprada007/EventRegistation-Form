@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Registration Form</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Registration Form</h1>
+
+    <section class="event-info">
+      <h2>About This Event</h2>
+      <table>
+        <tr><td>Event Name:</td><td>Digital Marketing Masterclass</td></tr>
+        <tr><td>Date:</td><td>October 15, 2026</td></tr>
+        <tr><td>Time:</td><td>2:00 PM - 4:00 PM</td></tr>
+        <tr><td>Speaker:</td><td>Sarah Johnson (Digital Marketing Expert)</td></tr>
+      </table>
+    </section>
+
+    <form id="registrationForm">
+      <h2>Participant Information</h2>
+      <label>Full Name: <input type="text" name="fullName" required></label>
+      <label>Date of Birth: <input type="date" name="dob" required></label>
+
+      <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+
+      <label>Phone Number: <input type="tel" name="phone" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+
+      <label>Where did you hear about this virtual event?</label>
+      <div class="source-options">
+        <label><input type="radio" name="source" value="Facebook" required> Facebook</label>
+        <label><input type="radio" name="source" value="YouTube"> YouTube</label>
+        <label><input type="radio" name="source" value="Instagram"> Instagram</label>
+        <label><input type="radio" name="source" value="Twitter"> Twitter</label>
+        <label>Other: <input type="text" name="sourceOther"></label>
+      </div>
+
+      <h2>Payment Information</h2>
+      <label>Number of Tickets: <input type="number" name="tickets" required></label>
+
+      <label>Payment Method:</label>
+      <div class="payment-options">
+        <label><input type="radio" name="payment" value="Credit Card" required> Credit Card</label>
+        <label><input type="radio" name="payment" value="Debit Card"> Debit Card</label>
+        <label><input type="radio" name="payment" value="Cash"> Cash</label>
+        <label><input type="radio" name="payment" value="Check"> Check</label>
+      </div>
+
+      <label><input type="checkbox" name="agreement" required> I understand and agree to the terms.</label>
+
+      <label>Signature: <input type="text" name="signature" required></label>
+      <label>Date Signed: <input type="date" name="dateSigned" required></label>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="successMessage" class="hidden">
+      <h2>Registration Successful!</h2>
+      <p>Thank you for registering!</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    
